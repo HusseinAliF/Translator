@@ -14,8 +14,10 @@ import java.util.HashMap;
 public class TheBag {
 
     public static final String SHARE_KEY = "shareIt";
+    //نوع الملف الي بالجسون
     public static final Type typeToken = new TypeToken<HashMap<String, String[]>>() {
     }.getType();
+    //هذا الجسون الي استخدمته في كل الكلاسات
     public static final Gson gson = new Gson();
     private static final String English_JSON_KEY = "EnglishJsonKey";
     private static final String FRENCH_JSON_KEY = "EnglishJsonKey";

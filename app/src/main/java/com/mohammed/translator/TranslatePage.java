@@ -32,10 +32,11 @@ public class TranslatePage extends AppCompatActivity {
 
 
         TheBag bag = new TheBag();
+        //غير هذا الي الفاربيس
         getData = getSharedPreferences(TheBag.SHARE_KEY, MODE_PRIVATE);
 
         lang = bag.Dialog(this);
-
+        //هنا اخذت كود الجسون من الحفظ الداخلي غيره الى فاربيس
         String json = getData.getString(lang, null);
 
         if (json == null) {

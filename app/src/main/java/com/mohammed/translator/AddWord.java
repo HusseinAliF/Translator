@@ -27,12 +27,12 @@ public class AddWord extends AppCompatActivity {
         arabic = findViewById(R.id.arabicWord);
 
         Button submit = findViewById(R.id.submitAdd);
-
+        //ايضا هذا غيره للفايربيس
         SharedPreferences savedData = getSharedPreferences(TheBag.SHARE_KEY, MODE_PRIVATE);
 
         TheBag bag = new TheBag();
         lang = bag.Dialog(this);
-
+        //معلومات الجسون من الهاتف غيره فايربيس
         String json = savedData.getString(lang, null);
 
         if (json == null) {
@@ -54,7 +54,7 @@ public class AddWord extends AppCompatActivity {
                     ForeignWord = ForeignWord.toLowerCase();
                     ForeignLanguage.put(ForeignWord, arabicWord.split("_"));
                     String toJson = TheBag.gson.toJson(ForeignLanguage, TheBag.typeToken);
-
+                    //حفظت البيانات هنا بالخزن الداخلي انت احفظها بالفايربيس
                     SharedPreferences preferences = getSharedPreferences(TheBag.SHARE_KEY, MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString(lang, toJson);
