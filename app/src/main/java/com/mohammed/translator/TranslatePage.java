@@ -32,7 +32,7 @@ public class TranslatePage extends AppCompatActivity {
 
 
         TheBag bag = new TheBag();
-        //غير هذا الي الفاربيس
+        //غير هذا الي الفياربيس
         getData = getSharedPreferences(TheBag.SHARE_KEY, MODE_PRIVATE);
 
         lang = bag.Dialog(this);
